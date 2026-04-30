@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Darumadrop+One&family=Just+Me+Again+Down+Here&family=Londrina+Sketch&family=Palette+Mosaic&display=swap');
+
+.beth-ellen-regular {
+  font-family: "Beth Ellen", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  background: #ddb292;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.wrapper > div {
+  border: 2px solid rgb(233 171 88);
+  border-radius: 5px;
+  background-color: rgb(233 171 88 / 50%);
+  padding: 0 ;
+  color: #d9480f;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(300px, auto);
+  grid-row:auto;
+}
+.wiki {
+  grid-column: 2 / 4;
+  grid-row: 1;
+}
+.vogue {
+  grid-column: 4 / 6;
+  grid-row: 1 ;
+}
+.smatcha {
+  grid-column: 1;
+  grid-row: 1 / 4;
+}
+.four {
+  grid-column: 3;
+  grid-row: 3;
+}
+.five {
+  grid-column: 2;
+  grid-row: 4;
+}
+.six {
+  grid-column: 3;
+  grid-row: 4;
+}
+.seven {
+  grid-column: 2/5;
+  grid-row: 2;
+}
+.eight {
+  
+}
+.nine {
+  
+}
+.ten {
+  
+}
+
+
+iframe {
+  width: 100%;
+  height:100%;
+  border-radius: 5px;
+}
+
+
+
+.heading {
+  font-size: 5vw;
+  text-align: center;
+  font-family: "Beth Ellen", cursive;
+  padding: 5rem;
+}
+
+
+
+
+
+@media (max-width: 1250px) {
+  .grid { 
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 140px;
+  }
+  .grid {
+  padding-left: 10em;
+  padding-right: 10em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  padding: 18px;
+  grid-template-areas:
+    "ymatcha ymatcha ."
+    "sgreen vogue  . "
+    "sgreen vogue  . "
+     ". wiki wiki"
+    "chaan chaan pint "
+    "chaan chaan pint "
+    "damtuh damtuh damtuh"
+    "ts te kettl"
+    "ts te kettl"
+    "arena smatcha smatcha"
+    "sorate yt yt"
+    "smy . harney"
+    "tea tea . "
+    "hist hist hist"
+    "sbrown sbrown sbrown"
+    "sred list list"
+    "ahist . ."
+    ". ypl ypl"
+    "last last last";
+}
+}
+
+
+@media (max-width: 950px) {
+  .grid { 
+    display:flex;
+    flex-direction:column;
+
+  }
+}
